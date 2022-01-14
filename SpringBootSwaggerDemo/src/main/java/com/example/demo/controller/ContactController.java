@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ContactController {
 	
-	ConcurrentHashMap<String, Contact> contacts = new ConcurrentHashMap<>();
+	private ConcurrentHashMap<String, Contact> contacts = new ConcurrentHashMap<>();
 	
 	@GetMapping
 	public List<Contact> getAllContacts() {
